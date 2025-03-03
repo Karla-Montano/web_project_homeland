@@ -1,0 +1,12 @@
+@font-face {
+  src: url(../vendor/fonts/Inter-Regular.woff2) format(woff2);
+  font-family: "Inter";
+}
+@font-face {
+  src: url(../vendor/fonts/Inter-Bold.woff2) format(woff2);
+  font-family: "Inter-Bold";
+}
+@font-face {
+  src: url(../vendor/fonts/Inter-ExtraBold.woff2) format(woff2);
+  font-family: "Inter-Extra-Bold";
+}
