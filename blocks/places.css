@@ -1,0 +1,37 @@
+.places{
+display: flex;
+flex-direction: column;
+}
+.place{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+}
+.place__title{
+    margin-top: 0;
+    font-family: "Inter-Extra-Bold";
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 1.05;
+}
+.place__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.place__artist{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color:#AAAAAA;
+
+    }
+.place__website{}
+.place__image{}
+.place__paragraph{}
+.place__form{}
