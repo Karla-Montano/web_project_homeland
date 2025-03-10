@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 .place {
-  display: inline-grid;
+  display: grid;
   justify-content: center;
   width: 100%;
   grid-template-columns: 1fr 1fr;
@@ -43,6 +43,11 @@
 .place__image {
   width: 100%;
   box-shadow: 10px 10px 25px 0px #00000080;
+  transition: 0.3s ease-in-out;
+}
+.place__image:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: multiply;
 }
 .place__paragraphs {
   grid-row: span 2;
@@ -51,12 +56,13 @@
   font-family: "Inter";
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.63;
+  line-height: 1.6;
   margin-top: 0;
   margin-bottom: 25px;
 }
 .place__form {
   width: 289px;
+  height: 48px;
 }
 .place__fieldset {
   border: 0;
@@ -74,4 +80,59 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
+}
+.place__form-button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+@media (min-width: 544px) and (max-width: 1024px) {
+  .place {
+    margin-left: 24px;
+    margin-right: 24px;
+    max-width: 90%;
+    margin: 0 auto 72px;
+    column-gap: 38px;
+  }
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  .place__form-button {
+    height: 48px;
+  }
+  .place__website {
+    font-size: 12px;
+  }
+  .place__paragraph {
+    max-width: 352px;
+    font-size: 12px;
+    grid-column: span 3;
+    grid-row: 2 / 5;
+  }
+  .place__last-place {
+    margin-bottom: 90px;
+  }
+}
+@media (min-width: 320px) and (max-width: 544px) {
+  .place {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    max-width: 90%;
+    margin: 0 auto 65px;
+  }
+  .place__title {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+  .place__website {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.1;
+  }
 }

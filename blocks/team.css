@@ -50,6 +50,7 @@
     display: flex;
     align-self: center;
     max-width: 720px;
+    margin-bottom: 64px;
   }
   .team__title {
     font-size: 45px;
@@ -61,6 +62,7 @@
     display: flex;
     align-self: center;
     max-width: 288px;
+    margin-bottom: 38px;
   }
   .team__title {
     font-size: 32px;

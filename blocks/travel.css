@@ -35,6 +35,9 @@
     font-size: 75px;
     line-height: 79px;
   }
+  .travel__image {
+    box-shadow: 0px 10px 25px 0px #00000080;
+  }
 }
 @media (min-width: 320px) and (max-width: 544px) {
   .travel__title {
